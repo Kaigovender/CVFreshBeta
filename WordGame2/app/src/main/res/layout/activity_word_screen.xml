@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WordScreen">
+
+    <EditText
+        android:id="@+id/txtWord"
+        android:layout_width="280dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="395dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Guess Word:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblHeading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="206dp"
+        android:text="Welcome To The Word Guessing Game!"
+        app:layout_constraintBottom_toTopOf="@+id/txtWord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGuess"
+        android:layout_width="134dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="216dp"
+        android:text="Guess"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWord" />
+</androidx.constraintlayout.widget.ConstraintLayout>
